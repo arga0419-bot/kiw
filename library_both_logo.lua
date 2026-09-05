@@ -8500,8 +8500,8 @@ function Library:CreateWindow(WindowInfo)
 
         if WindowInfo.Icon then
             local Icon = Library:GetCustomIcon(WindowInfo.Icon)
-            -- Pandu Hub: use the custom logo for the window title image too.
-            if WindowInfo.Title == "Pandu Hub" then
+            -- LeenZ: use the custom logo for the window title image too.
+            if WindowInfo.Title == "Leenz Hub" then
                 Icon = {
                     Url = "rbxassetid://111387348661729",
                     ImageRectOffset = Vector2.zero,
@@ -11167,8 +11167,8 @@ function Library:CreateWindow(WindowInfo)
     if Library.IsMobile then
         local iconUrl = "rbxassetid://102639104920386"
 
-        -- Pandu Hub: use the same custom logo for the floating mobile toggle.
-        if WindowInfo.Title == "Pandu Hub" then
+        -- LeenZ: use the same custom logo for the floating mobile toggle.
+        if WindowInfo.Title == "Leenz Hub" then
             iconUrl = "rbxassetid://111387348661729"
         elseif WindowInfo.Icon then
             local iconStr = tostring(WindowInfo.Icon)
