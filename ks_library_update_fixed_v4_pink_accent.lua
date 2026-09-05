@@ -4476,7 +4476,7 @@ Library.Scheme.OutlineColor    = Color3.fromRGB(255, 255, 255)
 Library.Scheme.FontColor       = Color3.fromRGB(220, 210, 255)
 
 local Window = Library:CreateWindow({
-    Title = "Pandu Hub",
+    Title = "LeenZ",
     Footer = 'YOUTUBE | https://youtube.com/@leenztzy',
     Icon = "94380161420025",
     IconSize = UDim2.fromOffset(50, 50),
@@ -5563,7 +5563,7 @@ ParryGroup:AddToggle("Surv_CrouchV", {
     Callback = function(v)
         Config.Surv_CrouchV = v
         Library:Notify({
-            Title = "Pandu Hub",
+            Title = "LeenZ",
             Description = "Auto Dodge Veil: " .. (v and "ON" or "OFF"),
             Time = 2
         })
@@ -8147,7 +8147,7 @@ end
 -- ==================== TOGGLE DI ESP TAB ====================
 local NextKillerGroup = TabsUI.Esp:AddRightGroupbox("Info Player", "info")
 
-local DraggableLabel = Library:AddDraggableLabel("Pandu Hub")
+local DraggableLabel = Library:AddDraggableLabel("LeenZ")
 WatermarkEnabled = false
 WatermarkConnection = nil
 
@@ -9911,7 +9911,7 @@ SaveManager:SetFolder("Pandu/FullFeature")
 SaveManager:BuildConfigSection(TabsUI["UI Settings"])
 ThemeManager:ApplyToTab(TabsUI["UI Settings"])
 SaveManager:LoadAutoloadConfig()
-Library:Notify({ Title = "Pandu Hub", Description = "Berhasil Dimuat!", Time = 3 })
+Library:Notify({ Title = "LeenZ", Description = "Berhasil Dimuat!", Time = 3 })
 end
 
 -- Jalankan script utama tanpa Key System
