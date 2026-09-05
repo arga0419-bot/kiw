@@ -4477,7 +4477,7 @@ Library.Scheme.FontColor       = Color3.fromRGB(220, 210, 255)
 
 local Window = Library:CreateWindow({
     Title = "Pandu Hub",
-    Footer = 'Violence District v2.4.0 | https://discord.gg/panduhub',
+    Footer = 'YOUTUBE | https://youtube.com/@leenztzy',
     Icon = "94380161420025",
     IconSize = UDim2.fromOffset(50, 50),
     NotifySide = "Right",
