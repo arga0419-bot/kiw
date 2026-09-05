@@ -436,8 +436,8 @@ function enableSpoofer()
 
                 for _, player in ipairs(Players:GetPlayers()) do
                     if string.find(currentText, player.Name) or string.find(currentText, player.DisplayName) then
-                        currentText = string.gsub(currentText, player.Name, "PANDU")
-                        currentText = string.gsub(currentText, player.DisplayName, "PANDU")
+                        currentText = string.gsub(currentText, player.Name, "LEENZ")
+                        currentText = string.gsub(currentText, player.DisplayName, "LEENZ")
                         changed = true
                     end
                 end
@@ -4476,9 +4476,9 @@ Library.Scheme.OutlineColor    = Color3.fromRGB(255, 255, 255)
 Library.Scheme.FontColor       = Color3.fromRGB(220, 210, 255)
 
 local Window = Library:CreateWindow({
-    Title = "LeenZ",
-    Footer = 'YOUTUBE | https://youtube.com/@leenztzy',
-    Icon = "94380161420025",
+    Title = "LeenZ Hub",
+    Footer = 'Violence District v2.4.0 | https://discord.gg/panduhub',
+    Icon = "111387348661729",
     IconSize = UDim2.fromOffset(50, 50),
     NotifySide = "Right",
     EnableSidebarResize = true,
@@ -4490,7 +4490,7 @@ local Window = Library:CreateWindow({
 })
 
 local TabsUI = {
-    Main = Window:AddTab("Pandu", "house"),
+    Main = Window:AddTab("LeenZ", "house"),
     Survivor = Window:AddTab("Survivor", "users"),
     Killer = Window:AddTab("Killer", "swords"),
     Esp = Window:AddTab("ESP", "eye"),
@@ -5563,7 +5563,7 @@ ParryGroup:AddToggle("Surv_CrouchV", {
     Callback = function(v)
         Config.Surv_CrouchV = v
         Library:Notify({
-            Title = "LeenZ",
+            Title = "LeenZ Hub",
             Description = "Auto Dodge Veil: " .. (v and "ON" or "OFF"),
             Time = 2
         })
@@ -5983,7 +5983,7 @@ ParryGroup:AddButton({
     Callback = function()
         ApplyKorless()
         Library:Notify({
-            Title = "PANDU",
+            Title = "LEENZ",
             Description = "Korless Morph Applied",
             Time = 3
         })
@@ -8147,7 +8147,7 @@ end
 -- ==================== TOGGLE DI ESP TAB ====================
 local NextKillerGroup = TabsUI.Esp:AddRightGroupbox("Info Player", "info")
 
-local DraggableLabel = Library:AddDraggableLabel("LeenZ")
+local DraggableLabel = Library:AddDraggableLabel("LeenZ Hub")
 WatermarkEnabled = false
 WatermarkConnection = nil
 
@@ -8184,7 +8184,7 @@ function StartWatermark()
         end
 
         local ping = math.floor(game:GetService('Stats').Network.ServerStatsItem['Data Ping']:GetValue() or 0)
-        DraggableLabel:SetText(('Pandu | %s fps | %s ms'):format(math.floor(FPS), ping))
+        DraggableLabel:SetText(('LeenZ | %s fps | %s ms'):format(math.floor(FPS), ping))
         DraggableLabel:SetVisible(true)
     end)
 end
@@ -9906,12 +9906,12 @@ ThemeManager:SetLibrary(Library)
 SaveManager:SetLibrary(Library)
 SaveManager:IgnoreThemeSettings()
 SaveManager:SetIgnoreIndexes({ "MenuKeybind" })
-ThemeManager:SetFolder("Pandu")
-SaveManager:SetFolder("Pandu/FullFeature")
+ThemeManager:SetFolder("LeenZ")
+SaveManager:SetFolder("LeenZ/FullFeature")
 SaveManager:BuildConfigSection(TabsUI["UI Settings"])
 ThemeManager:ApplyToTab(TabsUI["UI Settings"])
 SaveManager:LoadAutoloadConfig()
-Library:Notify({ Title = "LeenZ", Description = "Berhasil Dimuat!", Time = 3 })
+Library:Notify({ Title = "LeenZ Hub", Description = "Berhasil Dimuat!", Time = 3 })
 end
 
 -- Jalankan script utama tanpa Key System
